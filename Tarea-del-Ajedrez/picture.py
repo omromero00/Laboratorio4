@@ -65,6 +65,12 @@ class Picture:
     return Picture(image)
 
   def verticalRepeat(self, n):
+    VRepeat = []
+    i = 0
+    while i < n:
+      i += 1
+      for value in self.img:
+        VRepeat.append(value)
     return Picture(None)
 
   #Extra: Sólo para realmente viciosos 
