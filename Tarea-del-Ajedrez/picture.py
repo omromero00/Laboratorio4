@@ -74,8 +74,14 @@ class Picture:
     return Picture(VRepeat)
 
   #Extra: Sólo para realmente viciosos 
-  def rotate(self):
-    """Devuelve una figura rotada en 90 grados, puede ser en sentido horario
-    o antihorario"""
-    return Picture(None)
+  def rotate(self):#"""Devuelve una figura rotada en 90 grados, puede ser en sentido horario
+    rotate = []#o antihorario"""
+    i = 0
+    for value in self.img:
+      rotate.append(value[0])
+    while i < len(rotate):
+      for value in self.img:
+        rotate[i] += value[i]
+      i += 1
+    return Picture(rotate)
 
