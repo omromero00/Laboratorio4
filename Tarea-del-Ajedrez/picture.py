@@ -30,7 +30,7 @@ class Picture:
       for char in value:
         iteration += self._invColor(char)
       negative.append(iteration)
-      ietration = ''
+      iteration = ''
     return Picture(negative)
 
   def join(self, p):#""" Devuelve una nueva figura poniendo la figura del argumento 
