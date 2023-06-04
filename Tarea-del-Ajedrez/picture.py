@@ -29,7 +29,7 @@ class Picture:
     for value in self.img:
       for char in value:
         iteration += self._invColor(char)
-      negative.append(ietration)
+      negative.append(iteration)
       ietration = ''
     return Picture(negative)
 
@@ -42,7 +42,9 @@ class Picture:
     return Picture(joined)
 
   def up(self, p):
-    return Picture(None)
+    image = self.img
+    image.extend(p.img)
+    return Picture(image)
 
   def under(self, p):
     """ Devuelve una nueva figura poniendo la figura p sobre la
