@@ -71,7 +71,7 @@ class Picture:
       i += 1
       for value in self.img:
         VRepeat.append(value)
-    return Picture(None)
+    return Picture(VRepeat)
 
   #Extra: Sólo para realmente viciosos 
   def rotate(self):
